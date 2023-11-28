@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+
+
+
+<div class="container py-4">
+  <h1 class="text-center py-4 my-4" style="font-family: Georgia, 'Times New Roman', Times, serif;">My Latest Projects </h1>
+  
+<div class="col">
+  {% for pic in category %}
+  <div class="card mb-3" style="max-width: 100rem;">
+    <a href="{% url 'product_detail' pic.id %}"style="color: rgb(87, 66, 66); "><h5 class="card-header " > {{ pic.name }}</h5></a>
+    
+    <div class="card-body text-secondary">
+      <h5 class="card-title" style="text-align: right;"><small> Update on : {{ pic.Date }} </small></h5>
+      <p class="card-text">{{ pic.description|slice:":200"|safe }} ...see more</p>
+    </div> 
+    
+</div>{% endfor %} 
+</div>
+
+ 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock body %}

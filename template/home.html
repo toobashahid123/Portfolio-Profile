@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% block body %}
+
+<!-- bio -->
+<div class="container ">
+  <div class="row">
+
+    <div class="col-md-6" style="left: 100px; top: 200px;"> 
+      <h1  style="color: rgb(87, 66, 66); font-size: xxx-large; "class="text-left">Hello</h1>
+      <h2 class="card-title text-left" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" >I Am <strong>Web Developer </strong></h2>
+      {% for bio in bio %}
+      <a href="{{ bio.resume.url }}" class="btn btn-dark mx-4 my-4" style=" color: rgb(87, 66, 66); background-color:rgb(206, 174, 174)"> My Resume</a>
+      {% endfor %}
+      <a href="/contact" class="btn btn-dark" style=" background-color:rgb(206, 174, 174); color: rgb(87, 66, 66);">Contact Me</a>
+     
+    </div>
+
+    <div class="col-md-6 py-4" >
+      <img src="static/images/user_images/comp.png" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+</div>
+<hr>
+
+
+<!-- my skills -->
+<div class="   container text-center py-4 ">
+  <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;"> My Skills</h2><br>
+<p style="font-weight: 600;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dolore atque impedit voluptatibus molestias inventore quisquam voluptatem, est aspernatur architecto.</p>
+</div>
+
+<div class="container">
+<div class="row " >
+
+  <div class="col-md-4 py-4">
+    <div class="card" style="border-radius: 10px;">
+      <div class="py-4 " style="justify-content: center; font-size: xxx-large; display: flex;" >
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+      <div class="card-footer">
+        <h2 class="text-center">Programming</h2>
+        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia facere nostrum ratione incidunt? Minus tempora quibusdam fugit ab consectetur.</p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-md-4 py-4">
+    <div class="card" style="border-radius: 10px;">
+      <div class="py-4 " style="justify-content: center; font-size: xxx-large; display: flex;" >
+        <i class="fa-brands fa-html5"></i>
+      </div>
+      <div class="card-footer">
+        <h2 class="text-center">Html</h2>
+        <p class="text-center"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur aspernatur, sunt obcaecati vel debitis nemo praesentium mollitia minima hic amet.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 py-4">
+    <div class="card" style="border-radius: 10px;">
+      <div class="py-4 " style="justify-content: center; font-size: xxx-large; display: flex;" >
+        <i class="fa-brands fa-css3-alt"></i>
+      </div>
+      <div class="card-footer">
+        <h2 class="text-center">CSS</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quasi repudiandae quidem iusto odio aliquam corrupti, reprehenderit distinctio nemo voluptatem.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 py-4">
+    <div class="card" style="border-radius: 10px;">
+      <div class="py-4 " style="justify-content: center; font-size: xxx-large; display: flex;" >
+        <i class="fa-solid fa-network-wired"></i>
+      </div>
+      <div class="card-footer">
+        <h2 class="text-center">API handling</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic ipsa maiores, delectus sint minus quos rerum voluptatum voluptatem iure?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 py-4">
+    <div class="card" style="border-radius: 10px;">
+      <div class="py-4 " style="justify-content: center; font-size: xxx-large; display: flex;" >
+        <i class="fa-solid fa-computer"></i>
+      </div>
+      <div class="card-footer">
+        <h2 class="text-center">Framework </h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque cupiditate optio expedita illum deleniti eum ullam totam. Deserunt, iusto architecto.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 py-4">
+    <div class="card" style="border-radius: 10px;">
+      <div class="py-4 " style="justify-content: center; font-size: xxx-large; display: flex;" >
+        <i class="fa-solid fa-database"></i>
+      </div>
+      <div class="card-footer">
+        <h2 class="text-center">Database</h2>
+        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequuntur dolore est nam, fugiat omnis hic quibusdam amet veritatis dignissimos..</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+
+<!-- my about -->
+<div id="about" class="container text-center py-4">
+  
+  <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;"> About Me</h2><br>
+  <h3 class="text-muted py-4">Hello, I am Web Developer</h3>
+<p style="font-weight: 600;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus eros, lacinia et rhoncus ac, rutrum ac velit. Cras luctus finibus neque. Aenean luctus vestibulum lorem in imperdiet. Proin magna augue, accumsan vel tempor vel, venenatis vel eros. Proin sapien felis, blandit id nisi quis, aliquet gravida turpis. Quisque vitae erat eu risus sagittis tincidunt. Nullam molestie volutpat tincidunt. Mauris erat massa, lacinia et egestas eu, tristique quis justo. Etiam vestibulum sem aliquet, malesuada nisi eu, pretium elit. Praesent facilisis a mi non tincidunt. Sed in ex quis ligula suscipit facilisis. <br><br>
+
+  Phasellus ut orci luctus, ultricies turpis ac, eleifend nibh. Ut pretium, ante et commodo consequat, leo felis euismod nibh, vel tincidunt est nisi et libero. Nunc bibendum augue enim, lacinia laoreet libero rhoncus et. Nulla diam purus, pulvinar vel augue vitae, ultricies porttitor nunc. Curabitur volutpat fermentum auctor. Aenean posuere eleifend ante a aliquet. Donec eleifend ut sem eu condimentum. Phasellus dignissim mollis leo, vel ultrices massa pellentesque bibendum. Sed sed maximus arcu. Cras nec dictum nisl. Fusce vitae quam a mauris fermentum luctus. Nullam faucibus, lacus id placerat condimentum, dui nulla consectetur nulla, vel semper lectus velit at elit. <br><br>
+  
+  <div class="row">
+    <!-- my services -->
+    <div class="col-md-4">
+      <div class="..." style="width: 22rem;">
+        <div class="card-body">
+          <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: left;"> My Services</h3><hr>
+          <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fuga!</p>
+          <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p style="text-align: left;">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+    <!-- my education -->
+    <div class="col-md-4">
+      <div class="..." style="width: 22rem;">
+        <div class="card-body">
+          <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: left;"> My Education</h3><hr>
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fuga!</p>
+            <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p style="text-align: left;">Lorem ipsum dolor sit amet.</p>
+
+        </div>
+      </div>
+    </div>
+    <!-- my location -->
+    <div class="col-md-4">
+      <div class="..." style="width: 22rem;">
+        <div class="card-body">
+          <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: left;"> My location</h3><hr>
+        
+
+          <ul style="text-align: left;">
+            <p><i class="fa-solid fa-location-dot" ></i> Pakistan,  karachi.</p>
+            <p><i class="fa-solid fa-phone"></i> 1234567899</p>
+          </ul>
+          <ul style="text-align: left;">
+            <i class="fa-brands fa-instagram m-2" style="font-size: x-large;"></i>
+            <i class="fa-brands fa-facebook m-2" style="font-size: x-large;"></i>
+            <i class="fa-brands fa-linkedin m-2" style="font-size: x-large;"></i>
+            <i class="fa-solid fa-envelope m-2"  style="font-size: x-large;"> </i>
+        </ul>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+        
+
+
+  <br><br><br>
+</div>
+
+
+</div>
+</div>
+
+
+
+{% endblock body %}

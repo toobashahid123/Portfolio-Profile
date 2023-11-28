@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+
+ <!-- form -->
+ <div class="container py-4">
+  <h1 class="text-center py-4 my-4" style="font-family: Georgia, 'Times New Roman', Times, serif;">Let's Connect   <i class="fa-solid fa-phone-flip"></i> </h1>
+    <div class="row py-4 " >
+        <div class="col-md-6  mx-4 ">
+          <small class="py-4" style="font-size: large;"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quam voluptatibus voluptates quo blanditiis dolore aperiam, itaque maiores officia minus.</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, tempora quisquam. Quasi consequatur dolor placeat, quia distinctio dolorum repellat. Vero, est sequi aliquid eligendi excepturi illo eveniet nam consequuntur voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempore!</p>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste temporibus repudiandae nemo impedit, quaerat tempore ipsa sed voluptatibus assumenda dolore voluptatem maiores, adipisci laudantium saepe?</p>
+          </small>
+       
+          
+            <h4 class="py-4"> Thank you for considering me. Let's weave magic together!</h4>
+        </div>
+        <div class="col-md-5" style="background-color:  rgb(255, 255, 255); height: 550px;">
+            <form method="post" action="{% url 'contact' %}">
+              {% csrf_token %}
+            
+                <div class="form-group">
+                  <h2 class="text-center py-4 text-muted"  >Get In Touch</h2>
+                  <label for="exampleInputEmail1"></label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="integer" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="form-group">
+                  <textarea name="desc" class="form-control" id="desc" cols="30" rows="5" placeholder="Write your Text" required></textarea>
+                  
+                </div>
+
+               <div class="py-4">
+                <button type="submit" class="btn btn-inline">Submit</button>
+               </div>
+                
+              </form>
+        </div>
+     </div><br><br><br>
+ </div>
+</div>
+ 
+
+{% endblock body %}
