@@ -1,11 +1,15 @@
 # Portfolio-Profile
 
 Welcome to my portfolio website! 
-This is a basic portfolio file where you can add your skills your bio and more!
+This is a basic portfolio file where you can add your skills your bio and you about section.
 
-#### Project
-here you can add your recent projects to showcase your work!
+## Project
+Here you can add your recent projects to showcase your work!
 you can easily add the description of your project.
+you can clone this website and work on it
+
+username : admin 
+password :admin
 
 
 ## Resume
