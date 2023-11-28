@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+<div class="container pt-4" >
+  
+  <h1 class="text-center py-4 my-4" style="font-family: Georgia, 'Times New Roman', Times, serif;">Project Detail </h1><hr>
+  <a href="/category"><button type="button" class="btn btn-outline-dark" >Back</button></a>
+    <div class=" mb-3 py-4" style="max-width: 940px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="card-img-top" src="{{ prod.image.url }}" alt="Card image cap">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">{{prod.name}}</h3>
+              <p class="card-text">{{prod.description}}</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}
